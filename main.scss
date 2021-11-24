@@ -1,4 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
+    background-color: rgb(27, 27, 27);
     font-family: "Press Start 2P", cursive;
+}
+.main_container {
+    color: seashell;
+    gap: 30px;
+    display: grid;
+    grid-template-areas:
+        " . h1 h1 h1 . "
+        ". h1 h1 h1 . "
+        ". input  .  output ."
+        ". input btn1  output ."
+        ". input btn2 output ."
+        ". input . output .";
+}
+h1 {
+    color: seashell;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+button {
+    width: 5rem;
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px, 0px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:focus {
+    text-decoration: none;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+button:active {
+    box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+    outline: 0;
+}
+
+button:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+#translateBtn {
+    width: 100px;
+    height: 40px;
+}
+
+// grid-template-areas:
+// ". . h1 h1 . ."
+// ". input input . output output ."
+// ". input input btn1 output output ."
+// ". input input btn2 output output ."
+// ". . . . . . ";
+#heading {
+    grid-area: h1;
+}
+#box {
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+}
+.output__container {
+    grid-area: output;
+    &--text {
+        text-align: center;
+    }
+}
+#btn1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: btn1;
+    padding-right: 0%;
+}
+#btn2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-area: btn2;
+}
+#inputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: -30px;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+#input {
+    margin-top: 30px;
+    color: seashell;
+    width: 400px;
+    height: 400px;
+    border: 2px seashell solid;
+    font-size: 20px;
+    padding: 0px;
+}
+#output {
+    margin-top: 30px;
+    border: 2px seashell solid;
+    width: 400px;
+    height: 400px;
+    font-size: 20px;
 }
