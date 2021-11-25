@@ -8,7 +8,12 @@
   color: seashell;
   gap: 30px;
   display: grid;
-  grid-template-areas: " . h1 h1 h1 . " ". h1 h1 h1 . " ". input  .  output ." ". input btn1  output ." ". input btn2 output ." ". input . output .";
+  grid-template-areas: " . h1 h1 h1 . " ". h1 h1 h1 . " ". input btn3 output ." ". input btn1 output ." ". input btn2 output ." ". input . output .";
+}
+
+p {
+  background-color: rgba(255, 245, 238, 0.596);
+  color: #1b1b1b;
 }
 
 h1 {
@@ -20,9 +25,9 @@ h1 {
 button {
   width: 5rem;
   appearance: button;
-  background-color: #000;
+  background-color: #1b1b1b;
   background-image: none;
-  border: 1px solid #000;
+  border: 1px solid seashell;
   border-radius: 4px;
   box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
@@ -67,6 +72,11 @@ button:not([disabled]):active {
   height: 40px;
 }
 
+#translateBtn2 {
+  width: 100px;
+  height: 40px;
+}
+
 #heading {
   grid-area: h1;
 }
@@ -85,12 +95,10 @@ button:not([disabled]):active {
 }
 
 #btn1 {
-  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   grid-area: btn1;
-  padding-right: 0%;
 }
 
 #btn2 {
@@ -98,6 +106,13 @@ button:not([disabled]):active {
   justify-content: center;
   text-align: center;
   grid-area: btn2;
+}
+
+#btn3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  grid-area: btn3;
 }
 
 #inputForm {
@@ -113,18 +128,20 @@ button:not([disabled]):active {
   margin-top: 30px;
   color: seashell;
   width: 400px;
-  height: 400px;
+  height: 200px;
   border: 2px seashell solid;
-  font-size: 20px;
+  border-radius: 5px;
+  font-size: 19px;
   padding: 0px;
+  background-color: rgba(255, 245, 238, 0.596);
 }
 
 #output {
   margin-top: 30px;
   border: 2px seashell solid;
+  border-radius: 5px;
   width: 400px;
-  height: 400px;
+  height: 200px;
   font-size: 20px;
+  background-color: rgba(255, 245, 238, 0.596);
 }
-
-/*# sourceMappingURL=main.css.map */
