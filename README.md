@@ -2,6 +2,8 @@
 
 Simple Morse Code Encoder with HTML, SCSS and JavaScript
 
+https://jay-yoon10.github.io/MorseCode_Project/
+
 ***
 ### 1. Initial Screen
 ***
